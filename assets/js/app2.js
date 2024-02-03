@@ -90,7 +90,7 @@ for (const propiedad of propiedades) {
    const isPet = propiedad.pet === true ? `<p class="text-success"><i class="fas fa-paw"></i> Mascotas permitidas</p>` : `<p class="text-danger">
    <i class="fas fa-ban"></i> No se permiten mascotas</p>`;
 
-   if (propiedad.sale) {
+   if (!propiedad.sale) {
      
      template += `
           <div class="col-md-4 mb-4">
